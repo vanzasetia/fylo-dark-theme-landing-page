@@ -26,17 +26,12 @@
   font-family: $cta-ff;
   font-weight: 700;
   
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: transparent;
-    transition: background-color 150ms ease-in-out;
-  }
-  
   @include on-event {
-    &::after {
-      background-color: rgba($white, 0.4);
-    }
+    background-image: linear-gradient(
+      150deg,
+      tint($cta-gradient-100, 40%),
+      40%,
+      tint($cta-gradient-200, 40%)
+    );
   }
 }

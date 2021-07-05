@@ -87,7 +87,6 @@
   cursor: pointer;
   height: rem(50);
   width: rem(50);
-  transition: all 150ms ease-in-out;
   
   @include on-event {
     border-color: $cyan;

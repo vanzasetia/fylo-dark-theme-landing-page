@@ -466,15 +466,8 @@ img {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
-.btn--cta::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: transparent;
-  transition: background-color 150ms ease-in-out;
-}
-.btn--cta:hover::after, .btn--cta:active::after, .btn--cta:focus::after {
-  background-color: rgba(255, 255, 255, 0.4);
+.btn--cta:hover, .btn--cta:active, .btn--cta:focus {
+  background-image: linear-gradient(150deg, #a3eee8, 40%, #85c5e0);
 }
 
 .header {
@@ -641,6 +634,7 @@ img {
 
 .cta__card {
   border-radius: 1em;
+  box-shadow: 0.625rem 0.625rem 1.25rem rgba(0, 0, 0, 0.6);
   background-color: #1c2431;
   padding: 2rem 1.125rem;
   text-align: center;
@@ -766,7 +760,6 @@ img {
   cursor: pointer;
   height: 3.125rem;
   width: 3.125rem;
-  transition: all 150ms ease-in-out;
 }
 .social__item:hover, .social__item:active, .social__item:focus {
   border-color: #65e2d9;

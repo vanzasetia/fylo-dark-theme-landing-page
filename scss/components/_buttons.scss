@@ -3,7 +3,12 @@
 .btn {
   display: inline-block;
   margin: rem(10) 0;
+  border: none;
   cursor: pointer;
+  
+  @include on-event {
+    outline: none;
+  }
 }
 
 .btn--cta {

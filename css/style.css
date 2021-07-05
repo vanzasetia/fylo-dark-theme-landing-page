@@ -449,7 +449,11 @@ img {
 .btn {
   display: inline-block;
   margin: 0.625rem 0;
+  border: none;
   cursor: pointer;
+}
+.btn:hover, .btn:active, .btn:focus {
+  outline: none;
 }
 
 .btn--cta {
@@ -627,4 +631,50 @@ img {
   border-radius: 50%;
   height: 2.5rem;
   width: 2.5rem;
+}
+
+.cta {
+  padding-top: 5.625rem;
+}
+
+.cta__card {
+  background-color: #1c2431;
+  padding: 2rem 1.125rem;
+  text-align: center;
+}
+
+.cta__title {
+  font-size: 1.125rem;
+}
+
+.cta__form {
+  display: grid;
+  margin-top: 2.5rem;
+}
+
+.cta__input-email {
+  border: none;
+  border-radius: 5em;
+  padding: 0.875rem;
+  width: 100%;
+  font-size: 0.875rem;
+}
+.cta__input-email:focus {
+  outline: none;
+}
+
+.cta__error-message {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 0.625rem;
+  color: #ff4242;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.cta__input-email:focus:invalid ~ .cta__error-message {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }

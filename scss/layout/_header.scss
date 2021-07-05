@@ -37,6 +37,7 @@
 
 .nav__link {
   color: $white;
+  font-family: $header-navigation-ff;
   
   @include on-event {
     text-decoration: underline;

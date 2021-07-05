@@ -514,6 +514,7 @@ img {
 
 .nav__link {
   color: white;
+  font-family: "Raleway", sans-serif;
 }
 .nav__link:hover, .nav__link:active, .nav__link:focus {
   text-decoration: underline;
@@ -588,7 +589,7 @@ img {
   background-repeat: no-repeat;
   background-position: top 3.75rem left 1.25rem;
   background-size: auto;
-  padding: 5.625rem 0;
+  padding-top: 5.625rem;
 }
 
 .testimonials .container {
@@ -634,10 +635,12 @@ img {
 }
 
 .cta {
-  padding-top: 5.625rem;
+  position: relative;
+  top: 11.25rem;
 }
 
 .cta__card {
+  border-radius: 1em;
   background-color: #1c2431;
   padding: 2rem 1.125rem;
   text-align: center;
@@ -677,4 +680,105 @@ img {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.footer {
+  padding-top: 15rem;
+  padding-bottom: 4.375rem;
+  background-color: #0b1523;
+}
+
+.footer__logo {
+  width: 11.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.info {
+  display: grid;
+  gap: 1.875rem;
+  margin: 2.5rem 0;
+}
+
+.info__item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+/**
+* 1. To make the 'icon-location.svg' align horizontally with the paragraph.
+* 2. To make the 'icon-location.svg' have the same 'gap' as the other two icons.
+*/
+.info__item:first-child .info__icon {
+  margin-top: 0.3125rem;
+  /* 1 */
+  margin-right: 0.3125rem;
+  /* 2 */
+  align-self: flex-start;
+}
+
+.info__description,
+.info__link {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.info__link {
+  color: white;
+}
+.info__link:hover, .info__link:active, .info__link:focus {
+  text-decoration: underline;
+}
+
+.footer__nav {
+  margin: 2.5rem 0;
+}
+
+.footer__item {
+  line-height: 2.5;
+}
+
+.footer__item:nth-child(5) {
+  margin-top: 2.5rem;
+}
+
+.footer__link {
+  color: white;
+  font-size: 1rem;
+}
+.footer__link:hover, .footer__link:active, .footer__link:focus {
+  font-weight: 700;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.0625rem solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 3.125rem;
+  width: 3.125rem;
+  transition: all 150ms ease-in-out;
+}
+.social__item:hover, .social__item:active, .social__item:focus {
+  border-color: #65e2d9;
+}
+.social__item:hover .social__link, .social__item:active .social__link, .social__item:focus .social__link {
+  color: #65e2d9;
+}
+
+.social__link {
+  color: white;
+}
+
+.social__link ion-icon {
+  font-size: 1.5rem;
 }

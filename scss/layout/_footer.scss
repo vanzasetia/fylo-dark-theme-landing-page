@@ -1,0 +1,107 @@
+@use '../abstracts' as *;
+
+.footer {
+  padding-top: rem(240);
+  padding-bottom: rem(70);
+  background-color: $footer-bg;
+}
+
+.footer__logo {
+  width: rem(180);
+  margin-bottom: rem(40);
+}
+
+// Info
+.info {
+  display: grid;
+  gap: rem(30);
+  margin: rem(40) 0;
+}
+
+.info__item {
+  display: flex;
+  gap: rem(20);
+  align-items: center;
+}
+
+/**
+* 1. To make the 'icon-location.svg' align horizontally with the paragraph.
+* 2. To make the 'icon-location.svg' have the same 'gap' as the other two icons.
+*/
+.info__item:first-child .info__icon {
+  margin-top: rem(5); /* 1 */
+  margin-right: rem(5); /* 2 */
+  align-self: flex-start;
+}
+
+.info__description,
+.info__link {
+  margin: 0;
+  font-size: rem(16);
+}
+
+.info__link {
+  color: $white;
+  
+  @include on-event {
+    text-decoration: underline;
+  }
+}
+
+// Footer Nav
+.footer__nav {
+  margin: rem(40) 0;
+}
+
+.footer__item {
+  line-height: 2.5;
+}
+
+.footer__item:nth-child(5) {
+  margin-top: rem(40);
+}
+
+.footer__link {
+  color: $white;
+  font-size: rem(16);
+    
+  @include on-event {
+    font-weight: 700;
+  }
+}
+
+// Social
+.social {
+  display: flex;
+  gap: rem(16);
+  justify-content: center;
+  margin-top: rem(40);
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: rem(1) solid $white;
+  border-radius: 50%;
+  cursor: pointer;
+  height: rem(50);
+  width: rem(50);
+  transition: all 150ms ease-in-out;
+  
+  @include on-event {
+    border-color: $cyan;
+    
+    .social__link {
+      color: $cyan;
+    }
+  }
+}
+
+.social__link {
+  color: $white;
+}
+
+.social__link ion-icon {
+  font-size: rem(24);
+}

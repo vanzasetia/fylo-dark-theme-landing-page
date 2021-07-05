@@ -1,10 +1,12 @@
 @use '../abstracts' as *;
 
 .cta {
-  padding-top: rem(90);
+  position: relative;
+  top: rem(180);
 }
 
 .cta__card {
+  border-radius: 1em;
   background-color: $cta-bg;
   padding: rem(32) rem(18);
   text-align: center;

@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.productive {
+  padding: rem(70) 0;
+}
+
+.productive .container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: rem(20);
+}
+
+.productive__title {
+  font-size: rem(18);
+}
+
+.productive__link {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+  border-bottom: rem(1) solid $cyan;
+  padding-bottom: rem(5);
+  width: 20ch;
+  color: $cyan;
+  font-size: rem(12);
+  
+  @include on-event {
+    border-bottom: rem(1) solid $white;
+    color: $white;
+    
+    svg use {
+      fill: $white;
+    }
+  }
+}

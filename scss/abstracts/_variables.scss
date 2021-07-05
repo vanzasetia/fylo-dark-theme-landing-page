@@ -1,0 +1,54 @@
+// Default style that I currently use on this project
+$default-html-font-size: 100% !default;
+$black: rgb(17, 17, 17) !default;
+$white: rgb(255, 255, 255) !default;
+
+// Styles for this specific project
+// Font family
+$raleway-font-family: 'Raleway', sans-serif;
+
+// Use Cases
+$headings-ff: $raleway-font-family;
+$cta-ff: $raleway-font-family;
+$header-navigation-ff: $raleway-font-family;
+
+// Primary Color
+$dark-blue-100: hsl(219, 30%, 18%);
+$dark-blue-200: hsl(217, 28%, 15%);
+$dark-blue-300: hsl(218, 28%, 13%);
+$dark-blue-400: hsl(216, 53%, 9%);
+
+// Use Cases
+$testimonials-bg: $dark-blue-100;
+$header-bg: $dark-blue-200;
+$sign-up-bg: $dark-blue-200;
+$main-bg: $dark-blue-300;
+$footer-bg: $dark-blue-400;
+
+// Accent Color
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$light-red: hsl(0, 100%, 63%);
+
+// Use Cases
+$cta-gradient-100: $cyan;
+$cta-gradient-200: $blue;
+$error-color: $light-red;
+
+// Breakpoints
+// Note: If you user font-size setting is 16px, then this 'em' is equal to this 'px'
+$breakpoints-up: (
+  'very-small': 25em, // => 400px,
+  'small': 40.625em, // => 650px,
+  'medium': 56.25em, // => 900px,
+  'large': 75em, // => 1200px,
+  'very-large': 87.5em, // => 1400px
+);
+
+$breakpoints-down: (
+  'very-small': 24.3975em, // => 399px,
+  'small': 40.5625em, // => 649px,
+  'medium': 56.1875em, // => 899px,
+  'large': 74.9375em, // => 1199px,
+  'very-large': 87.4375em, // => 1399px
+);

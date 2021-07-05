@@ -1,0 +1,44 @@
+@use '../abstracts' as *;
+
+.header {
+  background-color: $header-bg;
+  background-image: url('../images/bg-curvy-mobile.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: rem(20) 0;
+  height: rem(400);
+  overflow-y: visible;
+}
+
+.header__content {
+  margin-top: rem(40);
+  text-align: center;
+}
+
+.header__title {
+  font-size: rem(24);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__home {
+  flex-basis: rem(100);
+}
+
+.nav__list {
+  display: flex;
+  gap: rem(20);
+}
+
+.nav__link {
+  color: $white;
+  
+  @include on-event {
+    text-decoration: underline;
+  }
+}

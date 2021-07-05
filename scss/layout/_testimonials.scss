@@ -1,0 +1,53 @@
+@use '../abstracts' as *;
+
+.testimonials {
+  background-image: url('../images/bg-quotes.png');
+  background-repeat: no-repeat;
+  background-position: top rem(60) left rem(20);
+  background-size: auto;
+  padding: rem(90) 0;
+}
+
+.testimonials .container {
+  display: grid;
+  gap: rem(30);
+}
+
+// The card on mobile design is too small so I make it bigger.
+.testimonials__card {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: rem(30);
+  border-radius: 1em;
+  background-color: $card-bg;
+  padding: rem(16);
+}
+
+.testimonials__person {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: rem(16);
+  align-items: center;
+  // Since it is reverse, the 'justify-content' needs to be reversed.
+  justify-content: flex-end;
+}
+
+.testimonials__name,
+.testimonials__job {
+  margin: 0;
+}
+
+.testimonials__name {
+  font-size: rem(14);
+}
+
+.testimonials__job {
+  font-size: rem(12);
+  font-weight: 400;
+}
+
+.testimonials__img {
+  border-radius: 50%;
+  height: rem(40);
+  width: rem(40);
+}

@@ -401,7 +401,8 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-p {
+p,
+blockquote {
   margin: 0.625rem 0;
   line-height: 1.6;
 }
@@ -516,7 +517,7 @@ img {
 
 .features {
   padding-top: 21.875rem;
-  padding-bottom: 4.375rem;
+  padding-bottom: 5.625rem;
 }
 
 .features__list {
@@ -547,7 +548,7 @@ img {
 }
 
 .productive {
-  padding: 4.375rem 0;
+  padding: 5.625rem 0;
 }
 
 .productive .container {
@@ -576,4 +577,54 @@ img {
 }
 .productive__link:hover svg use, .productive__link:active svg use, .productive__link:focus svg use {
   fill: white;
+}
+
+.testimonials {
+  background-image: url("../images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: top 3.75rem left 1.25rem;
+  background-size: auto;
+  padding: 5.625rem 0;
+}
+
+.testimonials .container {
+  display: grid;
+  gap: 1.875rem;
+}
+
+.testimonials__card {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.875rem;
+  border-radius: 1em;
+  background-color: #202a3c;
+  padding: 1rem;
+}
+
+.testimonials__person {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.testimonials__name,
+.testimonials__job {
+  margin: 0;
+}
+
+.testimonials__name {
+  font-size: 0.875rem;
+}
+
+.testimonials__job {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.testimonials__img {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
 }

@@ -37,7 +37,8 @@ body {
   }
 }
 
-p {
+p,
+blockquote {
   margin: rem(10) 0;
   line-height: 1.6;
 }

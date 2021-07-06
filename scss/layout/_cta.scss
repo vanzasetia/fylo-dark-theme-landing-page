@@ -13,15 +13,34 @@
   padding: rem(32) rem(18);
   max-width: rem(400);
   text-align: center;
+  
+  @include breakpoint-up('medium') {
+    max-width: rem(600);
+  }
 }
 
 .cta__title {
   font-size: rem(20);
+  
+  @include breakpoint-up('medium') {
+    font-size: rem(30);
+  }
+}
+
+.cta__description {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(400);
 }
 
 .cta__form {
   display: grid;
   margin-top: rem(40);
+  
+  @include breakpoint-up('medium') {
+    justify-content: space-between;
+    grid-template-columns: 55% 40%;
+  }
 }
 
 .cta__input-email {
@@ -36,6 +55,12 @@
   }
 }
 
+.cta__input-submit {
+  margin-top: 0;
+  padding: rem(14);
+  height: rem(44);
+}
+
 .cta__error-message {
   visibility: hidden;
   opacity: 0;
@@ -44,6 +69,10 @@
   color: $error-color;
   font-size: rem(12);
   font-weight: 700;
+  
+  @include breakpoint-up('medium') {
+    text-align: left;
+  }
 }
 
 // Email validation

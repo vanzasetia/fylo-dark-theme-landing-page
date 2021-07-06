@@ -5,8 +5,15 @@
 }
 
 .testimonials .container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: rem(30);
+  
+  @include breakpoint-up('medium') {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 // The card on mobile design is too small so I make it bigger.
@@ -19,7 +26,7 @@
   border-radius: 1em;
   background-color: $card-bg;
   padding: rem(16);
-  max-width: rem(400);
+  max-width: rem(350);
 }
 
 .testimonials__quotes {

@@ -8,6 +8,16 @@
   display: flex;
   flex-direction: column-reverse;
   gap: rem(20);
+  
+  @include breakpoint-up('medium') {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.productive__text {
+  margin: 0 auto;
+  max-width: rem(500);
 }
 
 .productive__title {
@@ -16,7 +26,6 @@
 
 .productive__description {
   margin: rem(20) 0;
-  max-width: rem(500);
 }
 
 .productive__link {

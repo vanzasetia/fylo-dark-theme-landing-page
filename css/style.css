@@ -485,6 +485,11 @@ img {
     height: 31.25rem;
   }
 }
+@media screen and (min-width: 50em) {
+  .header {
+    background-image: url("../images/bg-curvy-desktop.svg");
+  }
+}
 
 .header__content {
   margin-top: 2.5rem;
@@ -596,6 +601,17 @@ img {
   flex-direction: column-reverse;
   gap: 1.25rem;
 }
+@media screen and (min-width: 50em) {
+  .productive .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.productive__text {
+  margin: 0 auto;
+  max-width: 31.25rem;
+}
 
 .productive__title {
   font-size: 1.125rem;
@@ -603,7 +619,6 @@ img {
 
 .productive__description {
   margin: 1.25rem 0;
-  max-width: 31.25rem;
 }
 
 .productive__link {
@@ -637,8 +652,16 @@ img {
 }
 
 .testimonials .container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1.875rem;
+}
+@media screen and (min-width: 50em) {
+  .testimonials .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .testimonials__card {
@@ -650,7 +673,7 @@ img {
   border-radius: 1em;
   background-color: #202a3c;
   padding: 1rem;
-  max-width: 25rem;
+  max-width: 21.875rem;
 }
 
 .testimonials__quotes {
@@ -702,14 +725,36 @@ img {
   max-width: 25rem;
   text-align: center;
 }
+@media screen and (min-width: 50em) {
+  .cta__card {
+    max-width: 37.5rem;
+  }
+}
 
 .cta__title {
   font-size: 1.25rem;
+}
+@media screen and (min-width: 50em) {
+  .cta__title {
+    font-size: 1.875rem;
+  }
+}
+
+.cta__description {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 25rem;
 }
 
 .cta__form {
   display: grid;
   margin-top: 2.5rem;
+}
+@media screen and (min-width: 50em) {
+  .cta__form {
+    justify-content: space-between;
+    grid-template-columns: 55% 40%;
+  }
 }
 
 .cta__input-email {
@@ -723,6 +768,12 @@ img {
   outline: none;
 }
 
+.cta__input-submit {
+  margin-top: 0;
+  padding: 0.875rem;
+  height: 2.75rem;
+}
+
 .cta__error-message {
   visibility: hidden;
   opacity: 0;
@@ -731,6 +782,11 @@ img {
   color: #ff4242;
   font-size: 0.75rem;
   font-weight: 700;
+}
+@media screen and (min-width: 50em) {
+  .cta__error-message {
+    text-align: left;
+  }
 }
 
 .cta__input-email:focus:invalid ~ .cta__error-message {

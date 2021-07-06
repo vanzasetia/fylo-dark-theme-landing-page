@@ -9,6 +9,10 @@
   padding: rem(20) 0;
   height: rem(400);
   overflow-y: visible;
+  
+  @include breakpoint-up('very-small') {
+    height: rem(500);
+  }
 }
 
 .header__content {
@@ -17,9 +21,30 @@
 }
 
 .header__title {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(500);
   font-size: rem(24);
 }
 
+.header__description {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(500);
+}
+
+.header__img {
+  margin-bottom: rem(20);
+  
+  @include breakpoint-up('very-small') {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: rem(400);
+  }
+  
+}
+
+// Nav
 .nav {
   display: flex;
   align-items: center;
@@ -41,5 +66,9 @@
   
   @include on-event {
     text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 20.625em) {
+    font-size: rem(12);
   }
 }

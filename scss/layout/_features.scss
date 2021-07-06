@@ -3,14 +3,24 @@
 .features {
   padding-top: rem(350);
   padding-bottom: rem(90);
+  
+  @include breakpoint-up('very-small') {
+    padding-top: rem(250);
+  }
 }
 
 .features__list {
   display: grid;
   gap: rem(60);
+  
+  @include breakpoint-up('very-small') {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .features__item {
+  margin: 0 auto;
+  max-width: rem(300);
   text-align: center;
 }
 

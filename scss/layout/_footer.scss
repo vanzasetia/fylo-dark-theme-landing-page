@@ -13,15 +13,20 @@
 
 // Info
 .info {
-  display: grid;
-  gap: rem(30);
-  margin: rem(40) 0;
+  margin-top: rem(40);
+  
+  @include breakpoint-up('very-small') {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(30);
+  }
 }
 
 .info__item {
   display: flex;
   gap: rem(20);
   align-items: center;
+  margin-top: rem(30);
 }
 
 /**
@@ -40,6 +45,13 @@
   font-size: rem(16);
 }
 
+.info__description {
+  
+  @include breakpoint-up('very-small') {
+    max-width: rem(300);
+  }
+}
+
 .info__link {
   color: $white;
   
@@ -51,6 +63,13 @@
 // Footer Nav
 .footer__nav {
   margin: rem(40) 0;
+}
+
+.footer__list {
+  
+  @include breakpoint-up('very-small') {
+    column-count: 2;
+  }
 }
 
 .footer__item {

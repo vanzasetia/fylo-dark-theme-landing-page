@@ -366,44 +366,44 @@ body {
 }
 
 h1 {
-  margin: 0.625rem 0;
+  margin: 0.875rem 0;
   line-height: 1.6;
   font-family: "Raleway", sans-serif;
 }
 
 h2 {
-  margin: 0.625rem 0;
+  margin: 0.875rem 0;
   line-height: 1.6;
   font-family: "Raleway", sans-serif;
 }
 
 h3 {
-  margin: 0.625rem 0;
+  margin: 0.875rem 0;
   line-height: 1.6;
   font-family: "Raleway", sans-serif;
 }
 
 h4 {
-  margin: 0.625rem 0;
+  margin: 0.875rem 0;
   line-height: 1.6;
   font-family: "Raleway", sans-serif;
 }
 
 h5 {
-  margin: 0.625rem 0;
+  margin: 0.875rem 0;
   line-height: 1.6;
   font-family: "Raleway", sans-serif;
 }
 
 h6 {
-  margin: 0.625rem 0;
+  margin: 0.875rem 0;
   line-height: 1.6;
   font-family: "Raleway", sans-serif;
 }
 
 p,
 blockquote {
-  margin: 0.625rem 0;
+  margin: 0.875rem 0;
   line-height: 1.6;
 }
 
@@ -480,6 +480,11 @@ img {
   height: 25rem;
   overflow-y: visible;
 }
+@media screen and (min-width: 31.25em) {
+  .header {
+    height: 31.25rem;
+  }
+}
 
 .header__content {
   margin-top: 2.5rem;
@@ -487,7 +492,27 @@ img {
 }
 
 .header__title {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 31.25rem;
   font-size: 1.5rem;
+}
+
+.header__description {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 31.25rem;
+}
+
+.header__img {
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 31.25em) {
+  .header__img {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 25rem;
+  }
 }
 
 .nav {
@@ -512,18 +537,35 @@ img {
 .nav__link:hover, .nav__link:active, .nav__link:focus {
   text-decoration: underline;
 }
+@media screen and (max-width: 20.625em) {
+  .nav__link {
+    font-size: 0.75rem;
+  }
+}
 
 .features {
   padding-top: 21.875rem;
   padding-bottom: 5.625rem;
+}
+@media screen and (min-width: 31.25em) {
+  .features {
+    padding-top: 15.625rem;
+  }
 }
 
 .features__list {
   display: grid;
   gap: 3.75rem;
 }
+@media screen and (min-width: 31.25em) {
+  .features__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .features__item {
+  margin: 0 auto;
+  max-width: 18.75rem;
   text-align: center;
 }
 
@@ -559,6 +601,11 @@ img {
   font-size: 1.125rem;
 }
 
+.productive__description {
+  margin: 1.25rem 0;
+  max-width: 31.25rem;
+}
+
 .productive__link {
   display: flex;
   align-items: center;
@@ -577,11 +624,15 @@ img {
   fill: white;
 }
 
+@media screen and (min-width: 31.25em) {
+  .productive__img {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 25rem;
+  }
+}
+
 .testimonials {
-  background-image: url("../images/bg-quotes.png");
-  background-repeat: no-repeat;
-  background-position: top 3.75rem left 1.25rem;
-  background-size: auto;
   padding-top: 5.625rem;
 }
 
@@ -591,12 +642,22 @@ img {
 }
 
 .testimonials__card {
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
   gap: 1.875rem;
+  margin: 0 auto;
   border-radius: 1em;
   background-color: #202a3c;
   padding: 1rem;
+  max-width: 25rem;
+}
+
+.testimonials__quotes {
+  position: absolute;
+  top: -1.875rem;
+  left: 0;
+  z-index: -1;
 }
 
 .testimonials__person {
@@ -633,15 +694,17 @@ img {
 }
 
 .cta__card {
+  margin: 0 auto;
   border-radius: 1em;
-  box-shadow: 0.625rem 0.625rem 1.25rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0.625rem 0.625rem 1.25rem rgba(0, 0, 0, 0.4);
   background-color: #1c2431;
   padding: 2rem 1.125rem;
+  max-width: 25rem;
   text-align: center;
 }
 
 .cta__title {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 .cta__form {
@@ -688,15 +751,21 @@ img {
 }
 
 .info {
-  display: grid;
-  gap: 1.875rem;
-  margin: 2.5rem 0;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 31.25em) {
+  .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.875rem;
+  }
 }
 
 .info__item {
   display: flex;
   gap: 1.25rem;
   align-items: center;
+  margin-top: 1.875rem;
 }
 
 /**
@@ -717,6 +786,12 @@ img {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 31.25em) {
+  .info__description {
+    max-width: 18.75rem;
+  }
+}
+
 .info__link {
   color: white;
 }
@@ -726,6 +801,12 @@ img {
 
 .footer__nav {
   margin: 2.5rem 0;
+}
+
+@media screen and (min-width: 31.25em) {
+  .footer__list {
+    column-count: 2;
+  }
 }
 
 .footer__item {

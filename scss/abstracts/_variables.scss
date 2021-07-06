@@ -38,7 +38,7 @@ $error-color: $light-red;
 // Breakpoints
 // Note: If you user font-size setting is 16px, then this 'em' is equal to this 'px'
 $breakpoints-up: (
-  'very-small': 25em, // => 400px,
+  'very-small': 31.25em, // => 500px,
   'small': 40.625em, // => 650px,
   'medium': 56.25em, // => 900px,
   'large': 75em, // => 1200px,
@@ -46,7 +46,7 @@ $breakpoints-up: (
 );
 
 $breakpoints-down: (
-  'very-small': 24.3975em, // => 399px,
+  'very-small': 31.1875em, // => 499px,
   'small': 40.5625em, // => 649px,
   'medium': 56.1875em, // => 899px,
   'large': 74.9375em, // => 1199px,

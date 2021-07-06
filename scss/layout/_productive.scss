@@ -14,6 +14,11 @@
   font-size: rem(18);
 }
 
+.productive__description {
+  margin: rem(20) 0;
+  max-width: rem(500);
+}
+
 .productive__link {
   display: flex;
   align-items: center;
@@ -31,5 +36,14 @@
     svg use {
       fill: $white;
     }
+  }
+}
+
+.productive__img {
+  
+  @include breakpoint-up('very-small') {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: rem(400);
   }
 }

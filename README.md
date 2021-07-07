@@ -24,9 +24,3 @@ I have several tools that I use to code:
 - 💻 [Termux](https://f-droid.org/packages/com.termux/) as my terminal. I use this for git and also npm related stuffs. But keep in mind that you can't run `npm i -D <package>` since it's not allowed, unless you have root access on your phone.
 - 📝 [Acode](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree) as my code editor. It has a nice highlighting syntax for HTML, CSS, Sass(scss syntax), and JavaScript.
 - 🛠️ [Eruda](https://github.com/liriliri/eruda) as my dev tool. It's not a change for dev tool on desktop. But it has some awesome features, such as inspect an element, JavaScript console, and much more.
-
-## Languages
-
-<img src="./images/sass-logo.png" style="width: 88px">
-<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo.svg" style="width: 88px">
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" style="width: 62px">

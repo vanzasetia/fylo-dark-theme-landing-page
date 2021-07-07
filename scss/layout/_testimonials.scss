@@ -29,7 +29,7 @@
   margin: 0 auto;
   border-radius: 1em;
   background-color: $card-bg;
-  padding: rem(16);
+  padding: rem(24);
   max-width: rem(350);
   
   @include breakpoint-up('large') {
@@ -71,4 +71,8 @@
   border-radius: 50%;
   height: rem(40);
   width: rem(40);
+}
+
+.testimonials__text {
+  margin-top: 0;
 }

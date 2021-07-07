@@ -142,6 +142,7 @@
 
 .social__link {
   color: $white;
+  line-height: 0; // To make the icon perfectly center
 }
 
 .social__link ion-icon {

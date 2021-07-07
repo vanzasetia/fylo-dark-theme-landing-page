@@ -70,12 +70,13 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  margin-top: rem(10);
+  margin: rem(10) 0;
   color: $error-color;
   font-size: rem(12);
   font-weight: 700;
   
   @include breakpoint-up('medium') {
+    margin-bottom: 0;
     text-align: left;
   }
 }

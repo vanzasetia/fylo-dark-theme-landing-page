@@ -19,6 +19,7 @@
   
   @include breakpoint-up('very-small') {
     grid-template-columns: repeat(2, 1fr);
+    align-items: baseline; // What it does???
     justify-content: center;
   }
 }
@@ -56,4 +57,11 @@
 
 .features__description {
   margin: 0;
+  
+  @include breakpoint-up('large') {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: rem(400);
+    font-size: rem(16);
+  }
 }

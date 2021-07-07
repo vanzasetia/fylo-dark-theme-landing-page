@@ -13,9 +13,9 @@
 
 Challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Coded by [me](https://www.frontendmentor.io/profile/vanzasetia), using 📱Android Phone! The reason for that is because I don't have any computer or laptop ☺️.
 
-On this challenge, I try to implement SEO things like using `robots.txt` and `sitemap.xml`. I also used `aria-label` for screen reader user. I'm not an expert on both SEO and accessibility so if you want to share your knowledge to me about those topics, you contact through [Gmail]() or if you're from Frontend Mentor you can chat with me on [community feedback section on Frontend Mentor]()
+On this challenge, I try to implement SEO things like using `robots.txt` and `sitemap.xml`. I also used `aria-label` for screen reader user. I'm not an expert on both SEO and accessibility so if you want to share your knowledge to me about those topics, you contact through [Gmail](venusbumi2@gmail.com) or if you're from Frontend Mentor you can chat with me on [community feedback section on Frontend Mentor](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-html5-css3-sass-71fZb3LhF)
 
-Here is the [live review]() and the [solution link]().
+Here is the [live review](https://fylodarkthemevs.netlify.app/) and the [solution link](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-html5-css3-sass-71fZb3LhF).
 
 ## ⚙️ Tools
 

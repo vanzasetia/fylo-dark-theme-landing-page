@@ -41,7 +41,7 @@ $breakpoints-up: (
   'very-small': 31.25em, // => 500px,
   'small': 40.625em, // => 650px,
   'medium': 50em, // => 800px,
-  'large': 75em, // => 1200px,
+  'large': 62.5em, // => 1000px,
   'very-large': 87.5em, // => 1400px
 );
 
@@ -49,6 +49,6 @@ $breakpoints-down: (
   'very-small': 31.1875em, // => 499px,
   'small': 40.5625em, // => 649px,
   'medium': 49.9375em, // => 799px,
-  'large': 74.9375em, // => 1199px,
+  'large': 62.4375em, // => 999px,
   'very-large': 87.4375em, // => 1399px
 );

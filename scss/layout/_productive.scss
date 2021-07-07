@@ -12,6 +12,7 @@
   @include breakpoint-up('medium') {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
   }
 }
 
@@ -22,6 +23,10 @@
 
 .productive__title {
   font-size: rem(18);
+  
+  @include breakpoint-up('large') {
+    font-size: rem(50);
+  }
 }
 
 .productive__description {
@@ -46,6 +51,10 @@
       fill: $white;
     }
   }
+  
+  @include breakpoint-up('large') {
+    font-size: rem(18);
+  }
 }
 
 .productive__img {
@@ -54,5 +63,9 @@
     margin-right: auto;
     margin-left: auto;
     max-width: rem(400);
+  }
+  
+  @include breakpoint-up('large') {
+    max-width: 100%;
   }
 }

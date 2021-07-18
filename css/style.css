@@ -402,44 +402,44 @@ body {
 }
 
 h1 {
-  margin: 0.875rem 0;
+  margin: 0.75rem 0;
   line-height: 1.6;
   font-family: "Raleway";
 }
 
 h2 {
-  margin: 0.875rem 0;
+  margin: 0.75rem 0;
   line-height: 1.6;
   font-family: "Raleway";
 }
 
 h3 {
-  margin: 0.875rem 0;
+  margin: 0.75rem 0;
   line-height: 1.6;
   font-family: "Raleway";
 }
 
 h4 {
-  margin: 0.875rem 0;
+  margin: 0.75rem 0;
   line-height: 1.6;
   font-family: "Raleway";
 }
 
 h5 {
-  margin: 0.875rem 0;
+  margin: 0.75rem 0;
   line-height: 1.6;
   font-family: "Raleway";
 }
 
 h6 {
-  margin: 0.875rem 0;
+  margin: 0.75rem 0;
   line-height: 1.6;
   font-family: "Raleway";
 }
 
 p,
 blockquote {
-  margin: 0.875rem 0;
+  margin: 0.75rem 0;
   line-height: 1.6;
 }
 
@@ -449,6 +449,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+address {
+  font-style: normal;
 }
 
 img {
@@ -522,7 +526,7 @@ img {
 
 .header {
   background-color: #1c2431;
-  padding: 2.1875rem 0;
+  padding: 1.25rem 0;
 }
 
 .header .container {
@@ -578,4 +582,320 @@ img {
 
 .hero__title {
   font-size: 1.5rem;
+}
+
+.features {
+  padding-top: 23.125rem;
+  padding-bottom: 5.625rem;
+}
+
+.features__list {
+  display: grid;
+  gap: 3.75rem;
+  text-align: center;
+}
+@supports not (gap: 3.75rem) {
+  .features__list {
+    grid-gap: 3.75rem;
+  }
+}
+@media screen and (min-width: 40em) {
+  .features__list {
+    align-items: baseline;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.features__title {
+  font-size: 1.125rem;
+}
+
+.features__icon {
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  height: 5rem;
+}
+
+.productive {
+  padding: 5.625rem 0;
+}
+
+.productive .container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.productive__text {
+  margin-top: 2.5rem;
+}
+
+.productive__title {
+  font-size: 1.125rem;
+}
+
+.productive__link {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  border-bottom: 0.0625rem solid #65e2d9;
+  padding-bottom: 0.3125rem;
+  width: 20ch;
+  color: #65e2d9;
+  font-size: 0.75rem;
+}
+.productive__link:focus-visible {
+  outline: 0.125rem dashed #65e2d9;
+  outline-offset: 0.3125rem;
+}
+.productive__link:hover, .productive__link:active, .productive__link:focus {
+  border-color: white;
+  color: white;
+}
+.productive__link:hover .productive__svg use, .productive__link:active .productive__svg use, .productive__link:focus .productive__svg use {
+  fill: white;
+}
+
+.testimonials {
+  padding-top: 5.625rem;
+}
+
+.testimonials .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.testimonials__card {
+  position: relative;
+  border-radius: 1em;
+  background-color: #202a3c;
+  padding: 1.5rem;
+}
+
+.testimonials__quotes {
+  position: absolute;
+  top: -2.5rem;
+  left: 0;
+  z-index: -1;
+}
+
+.testimonials__person {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.testimonials__text {
+  flex-basis: 100%;
+  order: 1;
+}
+
+.testimonials__img {
+  align-self: center;
+  order: 2;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.testimonials__figcaption {
+  align-self: center;
+  order: 3;
+}
+
+.testimonials__name,
+.testimonials__job {
+  margin: 0;
+}
+
+.testimonials__name {
+  font-size: 0.875rem;
+}
+
+.testimonials__job {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.cta {
+  position: relative;
+  top: 11.25rem;
+}
+
+.cta__card {
+  margin: 0 auto;
+  border-radius: 1em;
+  box-shadow: 0.625rem 0.625rem 1.25rem rgba(0, 0, 0, 0.4);
+  background-color: #1c2431;
+  padding: 2rem 1.125rem;
+  text-align: center;
+}
+
+.cta__title {
+  font-size: 1.25rem;
+}
+
+.cta__description {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cta__form {
+  margin-top: 1.25rem;
+}
+
+.cta__email {
+  border: none;
+  border-radius: 5em;
+  padding: 0.875rem;
+  padding-right: 1.875rem;
+  width: 100%;
+  font-size: 0.875rem;
+}
+.cta__email:focus-visible {
+  outline: 0.125rem dashed #65e2d9;
+  outline-offset: 0.3125rem;
+}
+.cta__email:focus {
+  outline: none;
+}
+
+.cta__form .btn {
+  display: block;
+  height: 2.75rem;
+  width: 100%;
+  padding: 0.875rem;
+}
+
+.placeholder {
+  margin-top: 0.3125rem;
+  height: 0.75rem;
+}
+
+.cta__error-message {
+  display: none;
+  padding-left: 0.875rem;
+  text-align: left;
+  color: #ff4242;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.cta__email:focus:invalid ~ .placeholder .cta__error-message {
+  display: block;
+}
+
+.cta__email:valid {
+  background-image: url("../images/check-mark.svg");
+  background-position: center right 0.625rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+}
+
+.footer {
+  background-color: #0b1523;
+  padding-top: 15rem;
+  padding-bottom: 5.625rem;
+  font-size: 1rem;
+}
+
+.footer__home:focus-visible {
+  outline: 0.125rem dashed #65e2d9;
+  outline-offset: 0.3125rem;
+}
+
+.info {
+  margin: 3.125rem 0;
+}
+
+.info__physical-address,
+.info__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.info__physical-address .info__icon {
+  margin-top: 0.5rem;
+}
+
+.info__container {
+  margin-top: 1.25rem;
+}
+
+.info__description,
+.info__link {
+  margin: 0;
+}
+
+.info__link {
+  color: white;
+}
+.info__link:focus-visible {
+  outline: 0.125rem dashed #65e2d9;
+  outline-offset: 0.3125rem;
+}
+.info__link:hover, .info__link:active, .info__link:focus {
+  text-decoration: underline;
+}
+
+.footer__item {
+  line-height: 2.5;
+}
+
+.footer__item:nth-child(5) {
+  margin-top: 1.875rem;
+}
+
+.footer__link {
+  color: white;
+}
+.footer__link:focus-visible {
+  outline: 0.125rem dashed #65e2d9;
+  outline-offset: 0.3125rem;
+}
+.footer__link:hover, .footer__link:active, .footer__link:focus {
+  font-weight: 700;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3.125rem;
+}
+@supports not (gap: 1rem) {
+  .social > * + * {
+    margin-left: 1rem;
+  }
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.0625rem solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 3.125rem;
+  width: 3.125rem;
+}
+.social__item:focus-visible {
+  outline: 0.125rem dashed #65e2d9;
+  outline-offset: 0.3125rem;
+}
+.social__item:hover, .social__item:active, .social__item:focus {
+  border-color: #65e2d9;
+}
+.social__item:hover .social__icon path, .social__item:active .social__icon path, .social__item:focus .social__icon path {
+  fill: #65e2d9;
+}
+
+.social__link {
+  line-height: 0;
+}
+
+.social__icon {
+  height: 1.5625rem;
+  width: 1.5625rem;
 }

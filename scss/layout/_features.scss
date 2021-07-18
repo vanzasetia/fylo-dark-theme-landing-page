@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.features {
+  padding-top: rem(370);
+  padding-bottom: rem(90);
+}
+
+.features__list {
+  display: grid;
+  gap: rem(60);
+  text-align: center;
+  
+  @supports not (gap: rem(60)) {
+    grid-gap: rem(60);
+  }
+  
+  @include breakpoint-up('small') {
+    align-items: baseline;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.features__title {
+  font-size: rem(18);
+}
+
+.features__icon {
+  margin: 0 auto;
+  padding-bottom: rem(24);
+  height: rem(80);
+}

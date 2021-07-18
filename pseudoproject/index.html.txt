@@ -41,7 +41,7 @@ main#main
         h2.productive__title
         p.productive__description
         a.productive__link[href="#"]
-          svg
+          svg[aria-hidden="true"]
       img.productive__image[alt=""][aria-hidden="true"]
    
   section.testimonials
@@ -84,7 +84,8 @@ main#main
           
 footer.footer[role="contentinfo"]
   .container
-    img.footer__logo[alt="Fylo."]
+    a.footer__home[href="index.html"][aria-label="Fylo - Home"]
+      img.footer__logo[alt="Fylo."]
     
     .footer__container
     
@@ -94,7 +95,7 @@ footer.footer[role="contentinfo"]
             img.info__icon[alt=""][aria-hidden="true"]
             p.info__description
         li.info__item
-          address.info__other-information
+          address.info__more-information
             .info__container
               img.info__icon[alt=""][aria-hidden="true"]
               a.info__link[href="tel:+15431234567"]

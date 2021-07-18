@@ -1,0 +1,105 @@
+@use '../abstracts' as *;
+
+.footer {
+  background-color: $footer-bg;
+  padding-top: rem(240);
+  padding-bottom: rem(90);
+  font-size: rem(16);
+}
+
+.footer__home {
+  
+  @include focus-visible;
+}
+
+.info {
+  margin: rem(50) 0;
+}
+
+.info__physical-address,
+.info__container {
+  display: flex;
+  align-items: flex-start;
+  gap: rem(20);
+}
+
+.info__physical-address .info__icon {
+  margin-top: rem(8);
+}
+
+.info__container {
+  margin-top: rem(20);
+}
+
+.info__description,
+.info__link {
+  margin: 0;
+}
+
+.info__link {
+  color: $white;
+  
+  @include focus-visible;
+  @include on-event {
+    text-decoration: underline;
+  }
+}
+
+.footer__item {
+  line-height: 2.5;
+}
+
+.footer__item:nth-child(5) {
+  margin-top: rem(30);
+}
+
+.footer__link {
+  color: $white;
+  
+  @include focus-visible;
+  @include on-event {
+    font-weight: 700;
+  }
+}
+
+.social {
+  display: flex;
+  gap: rem(16);
+  justify-content: center;
+  margin-top: rem(50);
+  
+  @supports not (gap: rem(16)) {
+    & > * + * {
+      margin-left: rem(16);
+    }
+  }
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: rem(1) solid $white;
+  border-radius: 50%;
+  cursor: pointer;
+  height: rem(50);
+  width: rem(50);
+  
+  @include focus-visible;
+  @include on-event {
+    border-color: $cyan;
+    
+    .social__icon path {
+      fill: $cyan;
+    }
+  }
+}
+
+.social__link {
+  line-height: 0;
+}
+
+.social__icon {
+  height: rem(25);
+  width: rem(25);
+}

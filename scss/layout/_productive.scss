@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+
+.productive {
+  padding: rem(90) 0;
+}
+
+.productive .container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.productive__text {
+  margin-top: rem(40);
+}
+
+.productive__title {
+  font-size: rem(18);
+}
+
+.productive__link {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+  border-bottom: rem(1) solid $cyan;
+  padding-bottom: rem(5);
+  width: 20ch;
+  color: $cyan;
+  font-size: rem(12);
+  
+  @include focus-visible;
+  @include on-event {
+    border-color: $white;
+    color: $white;
+    
+    .productive__svg use {
+      fill: $white;
+    }
+  }
+}

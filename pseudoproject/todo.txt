@@ -1,0 +1,11 @@
+* Add :focus-visible and active state
+  * .header__link
+  * .btn
+  * .productive__link
+  * .cta__email
+  * .info__link
+  * .footer__link
+  * .social__item
+
+* Add Just :focus-visible
+  * .header__home

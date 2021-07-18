@@ -1,20 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- SEO -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Fylo Landing Page">
+  <meta name="description" content="All your files in one secure location, accessible anywhere. Fylo stores your most important files in one secure location."/>
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="Vanza Setia, venusbumi2@gmail.com">
+  <meta name="url" content="https://fylodarkthemevs.netlify.app/">
+  <base href="/">
+  <link rel="alternate" hreflang="en" href="/">
+  <link rel="canonical" href="https://fylodarkthemevs.netlify.app/">
+  <!-- Open Graph Protocol -->
+  <meta property="og:title" content="Fylo Landing Page">
+  <meta property="og:description" content="All your files in one secure location, accessible anywhere. Fylo stores your most important files in one secure location.">
+  <meta property="og:image" content="https://fylodarkthemevs.netlify.app/design/desktop-preview.jpg">
+  <meta property="og:url" content="https://fylodarkthemevs.netlify.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-config" content="images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Android Dev Tools -->
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script>
+    eruda.init();
+  </script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Mailgo -->
+  <script defer src="./js/vendors/mailgo.min.js"></script>
+  <title>Fylo Landing Page</title>
 </head>
 <body>
+  <!-- Linking down to main -->
+  <a href="#main" class="sr-only">Main content.</a>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header__home" aria-label="Fylo - Home">
+        <img src="./images/logo.svg" alt="Fylo." class="header__logo">
+      </a>
+      <nav class="header__navigation" aria-label="primary">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">Features</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Team</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- END OF Header -->
+  
+  <!-- Main -->
+  <main id="main">
+    
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container flex flex--column-reverse">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="hero__description">
+            Fylo stores all your most important files in one secure location. Access them wherever
+            you need, share and collaborate with friends family, and co-workers.
+          </p>
+          <a href="#" class="btn btn--cta">Get Started</a>
+        </div>
+        <img src="./images/illustration-intro.png" alt="" class="hero__image" aria-hidden="true">
+      </div>
+    </section>
+    <!-- END OF Hero -->
+    
+  </main>
+  <!-- END OF Main -->
+  
+  <!--
   Features
   Team
   Sign In
@@ -95,12 +171,6 @@
   Contact Us
   Terms
   Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  -->
 </body>
 </html>

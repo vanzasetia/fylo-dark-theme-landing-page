@@ -1,0 +1,69 @@
+* :focus-visible on buttons and input elements. It can be `outline: 2px dashed color` and outline-offset
+* First, separate logo from nav element ✔️
+* Only putting ul inside nav ✔️
+* Header only contain nav items ✔️
+* Only put hero section inside main tag ✔️
+* aria-label for the submit button in the form could have been "submit email form" so that it will have a guide to what that button does. ✔️
+* Always include a hidden skip to content link as the first item on a page, linking down to main ✔️
+* aria-label="go to home page" isn't right. It needs to say the name of the site just as it would for sighted users. Fylo - Home would be more appropriate. You never need to say "go to..." in link labels as they are already anchor tags (navigation elements), just as you wouldn't need to say "image of" or "picture of" on img tags ✔️
+* Well done for labelling nav elements! ✔️
+* Personally, I think the page title h1 and associate content belongs in main, not header. The header is a separate landmark, a banner. But h1 is important page content. If someone skipped to main content, you wouldn't want them to miss this, as it is the main CTA on the page ✔️
+* Add visible focus styles to all interactive elements - very very important ✔️
+* On meaningless/decorative svgs with blank alt text, consider adding aria-hidden="true". This is only because Apple voiceover still announces images with empty alt text when it shouldn't ✔️
+* Blockquotes should be inside the figure and the person making the quote be figcaption. The current markup doesn't quite work I think... that's an opinion though, there is no established standard ✔️
+* the testimonials images are more meaningful imo, I would use the persons name as alt description ✔️
+* cta__error-message needs to have aria-live attribute on it and an ID. It should be hidden using the hidden attribute or display none (hidden from screenreaders fully) until it is relevant and visible. Thats what makes aria-live announce the error to screenreaders when it's shown ✔️
+* email input needs aria-describedby on it linking to the ID of that error message ✔️
+* the submit button should be a button element not an input type submit (deprecated) ✔️
+* footer needs role="contnentinfo" to ensure it is listed as a footer by all browsers ✔️
+* just say "Fylo". ✔️
+* markup inside info ul in footer is strange... It should be one list with 3 items, but you have it as a nested list.... I'd be tempted to have all of this including the logo inside an address tag too ✔️
+```
+<ul class="info">
+    <li class="info__item">
+      <img
+        src="./images/icon-location.svg"
+        alt=""
+        class="info__icon"
+      />
+      <p class="info__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua
+      </p>
+    </li>
+    <li class="info__wrapper">
+      <ul> This ul is strange...
+        <li class="info__item">
+          <img
+            src="./images/icon-email.svg"
+            alt=""
+            class="info__icon"
+          />
+          <a
+            href="mailto:example@fylo.com"
+            aria-label="Write email to example@fylo.com"
+            class="info__link"
+            >example@fylo.com</a
+          >
+        </li>
+        <li class="info__item">
+          <img
+            src="./images/icon-phone.svg"
+            alt=""
+            class="info__icon"
+          />
+          <a
+            href="tel:+15431234567"
+            aria-label="Call +15431234567"
+            class="info__link"
+            >+1-543-123-4567</a
+          >
+        </li>
+      </ul>
+    </li>
+</ul>
+```
+* As above, remove the words "go to ... page" on links like aria-label="Go to about page". In fact, they don't need aria labels at all. Remember, using HTML content is always preferable to aria labels where possible as it is translatable. Dont add air where its not needed. This would already be announced as "Link, About" which is fine - screenreader users know that will take them to a page called 'About' ✔️
+* The social icons are missing for me, I can't see them at all. ✔️
+* The social icon links need more to make them accessible: sr-only text saying the name of each platform, followed by (opens in new window). It's important to communicate when that is going to happen. I also recommend you add rel="noopener" to any links that open in a new window for security reasons ✔️

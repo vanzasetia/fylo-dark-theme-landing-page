@@ -1,0 +1,114 @@
+a.sr-only[href="#main"]{Main content.}
+
+header.header
+  .container
+    
+    a.header__home[aria-label="Fylo - Home"]
+      img.header__logo[alt="Fylo."]
+      
+    nav.header__navigation[aria-label="primary"]
+      ul.header__list
+        li.header__item * 3
+          a.header__link[href="#"]
+
+main#main
+  
+  section.hero
+    .container.flex.flex--column-reverse
+    
+      .hero__text
+        h1.hero__title
+        p.hero__description
+        a.btn.btn--cta[href="#"]
+      
+      img.hero__image[alt=""][aria-hidden="true"]
+  
+  section.features
+    .container
+      h2.sr-only{These are the features that Fylo offer to you}
+      
+      ul.features__list
+        li.features__item * 4
+          .flex.flex--column-reverse
+            .features__text
+              h3.features__title
+              p.features__description
+            img.features__icon[alt=""][aria-hidden="true"]
+            
+  article.productive
+    .container
+      .productive__text
+        h2.productive__title
+        p.productive__description
+        a.productive__link[href="#"]
+          svg
+      img.productive__image[alt=""][aria-hidden="true"]
+   
+  section.testimonials
+    .container
+      h2.sr-only{Don't just believe on what we say, it has been proven by ten of thousands people. Here are some reviews}
+      
+    .testimonials__card
+      img.testimonials__quotes[alt=""][aria-hidden="true"]
+      figure.testimonials__person
+        figcaption.testimonials__figcaption
+          h3.testimonials__name
+          h4.testimonials__job
+        img.testimonials__img[alt="person name"]
+        blockquote.testimonials__text
+   
+    .testimonials__card * 2
+      figure.testimonials__person
+        figcaption.testimonials__figcaption
+          h3.testimonials__name
+          h4.testimonials__job
+        img.testimonials__img[alt="person name"]
+        blockquote.testimonials__text
+      
+  section.cta
+    .container
+      .cta__card
+        h2.cta__title
+        p.cta__description
+        
+        form.cta__form[name="contact"][method="POST"][netlify-honeypot="bot-field"][data-netlify="true"]
+          
+          p.hidden[aria-hidden="true"]
+            label{Don’t fill this out if you’re human: }
+              input[name="bot-field"]
+          
+          .form-control
+            input:email.cta__email#ctaEmail[name="ctaEmail"][required][placeholder="email@example.com"][aria-describedby="errorMessage"]
+            .cta__error-message#errorMessage[aria-live="assertive"]
+          button.btn.btn--cta[type="submit"][aria-label="Submit email form."]
+          
+footer.footer[role="contentinfo"]
+  .container
+    img.footer__logo[alt="Fylo."]
+    
+    .footer__container
+    
+      ul.info
+        li.info__item
+          address.info__physical-address
+            img.info__icon[alt=""][aria-hidden="true"]
+            p.info__description
+        li.info__item
+          address.info__other-information
+            .info__container
+              img.info__icon[alt=""][aria-hidden="true"]
+              a.info__link[href="tel:+15431234567"]
+            .info__container
+              img.info__icon[alt=""][aria-hidden="true"]
+              a.info__link[href="mailto:example@fylo.com"]
+      
+      nav.footer__navigation[aria-label="secondary"]
+        ul.footer__list
+          li.footer__item * 7
+            a.footer__link[href="#"]
+            
+      ul.social
+        li.social__item * 3
+          a.social__link[href="https://www.facebook.com"][target="_blank"][rel="noopener"]
+            span.sr-only{Facebook, opens in new window.}
+            img.social__icon[alt=""][aria-hidden="true"]

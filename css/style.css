@@ -804,6 +804,10 @@ img {
   outline-offset: 0.3125rem;
 }
 
+.footer__logo {
+  display: inline-block;
+}
+
 .info {
   margin: 3.125rem 0;
 }

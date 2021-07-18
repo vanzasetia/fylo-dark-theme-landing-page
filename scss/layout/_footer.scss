@@ -12,6 +12,10 @@
   @include focus-visible;
 }
 
+.footer__logo {
+  display: inline-block;
+}
+
 .info {
   margin: rem(50) 0;
 }

@@ -31,7 +31,7 @@
   margin-top: rem(20);
   text-align: center;
   
-  @include breakpoint-up('large') {
+  @include breakpoint-up('medium') {
     margin-right: auto;
     margin-left: auto;
     max-width: rem(600);

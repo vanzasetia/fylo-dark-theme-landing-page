@@ -12,10 +12,6 @@
   @include breakpoint-up('large') {
     flex-direction: row;
   }
-  
-  @include breakpoint-up('very-large') {
-    max-width: 100%;
-  }
 }
 
 .testimonials__card {

@@ -599,11 +599,6 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (min-width: 80em) {
-  .header .container {
-    max-width: 100%;
-  }
-}
 
 .header__home {
   flex-basis: 6.25rem;
@@ -685,7 +680,7 @@ img {
   margin-top: 1.25rem;
   text-align: center;
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 48em) {
   .hero__text {
     margin-right: auto;
     margin-left: auto;
@@ -790,11 +785,13 @@ img {
 .productive .container {
   display: flex;
   flex-direction: column-reverse;
+  max-width: 40rem;
 }
 @media screen and (min-width: 64em) {
   .productive .container {
     flex-direction: row-reverse;
     gap: 2.5rem;
+    max-width: 75rem;
   }
 }
 
@@ -872,11 +869,6 @@ img {
 @media screen and (min-width: 64em) {
   .testimonials .container {
     flex-direction: row;
-  }
-}
-@media screen and (min-width: 80em) {
-  .testimonials .container {
-    max-width: 100%;
   }
 }
 
@@ -1061,10 +1053,6 @@ img {
   .footer {
     font-size: 0.875rem;
   }
-}
-
-.footer .container {
-  max-width: 100%;
 }
 
 .footer__container {

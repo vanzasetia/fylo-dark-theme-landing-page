@@ -40,9 +40,6 @@ Something is also happening to `icon-location.svg`, where I have to give `margin
 * **Email validation**, I learned on how to add email input validation without using JavaScript.
 
 
-## Questions
-
-
 ## Built With
 This project is created using **HTML5**, **CSS3**, and **Sass**. 
 
@@ -59,3 +56,5 @@ I also used [Mailgo](https://mailgo.dev/), which is a light JavaScript library f
 * [Form Validation UX in HTML and CSS](https://css-tricks.com/form-validation-ux-html-css/)
 
 ## Continued development
+
+I'm gonna take a look at feedback from other people to improve this site.

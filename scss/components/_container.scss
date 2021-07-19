@@ -7,4 +7,12 @@
   @include breakpoint-up('small') {
     padding: 0 rem(40);
   }
+  
+  @include breakpoint-up('large') {
+    padding: 0 rem(60);
+  }
+  
+  @include breakpoint-up('very-large') {
+    max-width: rem(1200);
+  }
 }

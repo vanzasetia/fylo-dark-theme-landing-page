@@ -7,6 +7,11 @@
 .productive .container {
   display: flex;
   flex-direction: column-reverse;
+  
+  @include breakpoint-up('large') {
+    flex-direction: row-reverse;
+    gap: rem(40);
+  }
 }
 
 .productive__text {
@@ -18,6 +23,14 @@
   
   @include breakpoint-up('medium') {
     font-size: rem(22);
+  }
+  
+  @include breakpoint-up('large') {
+    font-size: rem(40);
+  }
+  
+  @include breakpoint-up('very-large') {
+    font-size: rem(50);
   }
 }
 
@@ -40,6 +53,10 @@
       fill: $white;
     }
   }
+  
+  @include breakpoint-up('large') {
+    font-size: rem(14);
+  }
 }
 
 .productive__image {
@@ -47,5 +64,9 @@
   @include breakpoint-up('small') {
     margin: 0 auto;
     max-width: rem(400);
+  }
+  
+  @include breakpoint-up('small') {
+    max-width: rem(450);
   }
 }

@@ -11,6 +11,21 @@
   }
 }
 
+.footer .container {
+  max-width: 100%;
+}
+
+.footer__container {
+  margin-top: rem(50);
+  
+  @include breakpoint-up('large') {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(40);
+  }
+}
+
 .footer__home {
   display: inline-block;
   
@@ -22,7 +37,10 @@
 }
 
 .info {
-  margin: rem(50) 0;
+  
+  @include breakpoint-down('large') {
+    margin: rem(50) 0;
+  }
 }
 
 .info__physical-address,
@@ -54,6 +72,13 @@
   }
 }
 
+.footer__list {
+  
+  @include breakpoint-up('large') {
+    column-count: 2;
+  }
+}
+
 .footer__item {
   line-height: 2.5;
 }
@@ -81,6 +106,10 @@
     & > * + * {
       margin-left: rem(16);
     }
+  }
+  
+  @include breakpoint-up('large') {
+    margin-top: 0;
   }
 }
 

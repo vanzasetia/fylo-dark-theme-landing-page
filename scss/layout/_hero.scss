@@ -16,11 +16,26 @@
   @include breakpoint-up('medium') {
     height: rem(550);
   }
+  
+  @include breakpoint-up('large') {
+    background-image: url('../images/bg-curvy-desktop.svg');
+    height: rem(750);
+  }
+  
+  @include breakpoint-up('very-large') {
+    height: rem(1000);
+  }
 }
 
 .hero__text {
   margin-top: rem(20);
   text-align: center;
+  
+  @include breakpoint-up('large') {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: rem(600);
+  }
 }
 
 .hero__title {
@@ -28,6 +43,13 @@
   
   @include breakpoint-up('medium') {
     font-size: rem(28);
+  }
+  
+  @include breakpoint-up('large') {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: rem(600);
+    font-size: rem(32);
   }
 }
 
@@ -40,5 +62,9 @@
   
   @include breakpoint-up('medium') {
     max-width: rem(500);
+  }
+  
+  @include breakpoint-up('very-large') {
+    max-width: rem(900);
   }
 }

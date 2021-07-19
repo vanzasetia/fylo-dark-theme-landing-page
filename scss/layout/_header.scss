@@ -3,12 +3,24 @@
 .header {
   background-color: $header-bg;
   padding: rem(20) 0;
+  
+  @include breakpoint-up('large') {
+    padding: rem(40) 0;
+  }
+  
+  @include breakpoint-up('very-large') {
+    padding: rem(60) 0;
+  }
 }
 
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+  @include breakpoint-up('very-large') {
+    max-width: 100%;
+  }
 }
 
 .header__home {
@@ -17,6 +29,10 @@
   @include focus-visible;
   @include breakpoint-down('very-small') {
     flex-basis: rem(80);
+  }
+  
+  @include breakpoint-up('large') {
+    flex-basis: rem(180);
   }
 }
 

@@ -16,6 +16,10 @@
   @include breakpoint-up('medium') {
     width: rem(500);
   }
+  
+  @include breakpoint-up('large') {
+    width: rem(800);
+  }
 }
 
 .cta__title {
@@ -23,6 +27,10 @@
   
   @include breakpoint-up('medium') {
     font-size: rem(24);
+  }
+  
+  @include breakpoint-up('large') {
+    font-size: rem(40);
   }
 }
 
@@ -36,6 +44,7 @@
 }
 
 .cta__email {
+  display: block;
   border: none;
   border-radius: 5em;
   padding: rem(14);
@@ -53,9 +62,27 @@
   padding: rem(14);
 }
 
+.form-control {
+  position: relative;
+  
+  @include breakpoint-up('large') {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 55% 40%;
+  }
+}
+
 .placeholder {
   margin-top: rem(5);
   height: rem(12);
+  
+  @include breakpoint-up('large') {
+    position: absolute;
+    bottom: -#{rem(20)};
+    left: 0;
+    margin: 0;
+  }
 }
 
 .cta__error-message {

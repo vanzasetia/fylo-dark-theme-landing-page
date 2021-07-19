@@ -7,6 +7,18 @@
   @include breakpoint-up('small') {
     padding-top: rem(200);
   }
+  
+  @include breakpoint-up('large') {
+    padding-top: rem(100);
+  }
+  
+  @include breakpoint-up('very-large') {
+    padding-top: 0;
+  }
+}
+
+.features .container {
+  max-width: rem(1000);
 }
 
 .features__list {
@@ -32,4 +44,8 @@
   margin: 0 auto;
   padding-bottom: rem(24);
   height: rem(80);
+  
+  @include breakpoint-up('very-large') {
+    height: rem(100);
+  }
 }

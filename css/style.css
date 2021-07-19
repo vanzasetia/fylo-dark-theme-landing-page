@@ -400,6 +400,11 @@ body {
   font-family: "Open Sans";
   font-size: 0.875rem;
 }
+@media screen and (min-width: 48em) {
+  body {
+    font-size: 0.9375rem;
+  }
+}
 
 h1 {
   margin: 0.75rem 0;
@@ -592,6 +597,11 @@ img {
     height: 31.25rem;
   }
 }
+@media screen and (min-width: 48em) {
+  .hero {
+    height: 34.375rem;
+  }
+}
 
 .hero__text {
   margin-top: 1.25rem;
@@ -601,11 +611,21 @@ img {
 .hero__title {
   font-size: 1.5rem;
 }
+@media screen and (min-width: 48em) {
+  .hero__title {
+    font-size: 1.75rem;
+  }
+}
 
 @media screen and (min-width: 40em) {
   .hero__image {
     margin: 0 auto;
     max-width: 25rem;
+  }
+}
+@media screen and (min-width: 48em) {
+  .hero__image {
+    max-width: 31.25rem;
   }
 }
 
@@ -662,6 +682,11 @@ img {
 .productive__title {
   font-size: 1.125rem;
 }
+@media screen and (min-width: 48em) {
+  .productive__title {
+    font-size: 1.375rem;
+  }
+}
 
 .productive__link {
   display: flex;
@@ -707,6 +732,12 @@ img {
   border-radius: 1em;
   background-color: #202a3c;
   padding: 1.5rem;
+}
+@media screen and (min-width: 48em) {
+  .testimonials__card {
+    margin: 0 auto;
+    width: 31.25rem;
+  }
 }
 
 .testimonials__quotes {
@@ -767,9 +798,19 @@ img {
   padding: 2rem 1.125rem;
   text-align: center;
 }
+@media screen and (min-width: 48em) {
+  .cta__card {
+    width: 31.25rem;
+  }
+}
 
 .cta__title {
   font-size: 1.25rem;
+}
+@media screen and (min-width: 48em) {
+  .cta__title {
+    font-size: 1.5rem;
+  }
 }
 
 .cta__description {

@@ -15,6 +15,11 @@
   border-radius: 1em;
   background-color: $card-bg;
   padding: rem(24);
+  
+  @include breakpoint-up('medium') {
+    margin: 0 auto;
+    width: rem(500);
+  }
 }
 
 .testimonials__quotes {

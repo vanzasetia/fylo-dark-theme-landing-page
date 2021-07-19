@@ -12,10 +12,18 @@
   background-color: $cta-bg;
   padding: rem(32) rem(18);
   text-align: center;
+  
+  @include breakpoint-up('medium') {
+    width: rem(500);
+  }
 }
 
 .cta__title {
   font-size: rem(20);
+  
+  @include breakpoint-up('medium') {
+    font-size: rem(24);
+  }
 }
 
 .cta__description {

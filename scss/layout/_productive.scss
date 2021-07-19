@@ -15,6 +15,10 @@
 
 .productive__title {
   font-size: rem(18);
+  
+  @include breakpoint-up('medium') {
+    font-size: rem(22);
+  }
 }
 
 .productive__link {

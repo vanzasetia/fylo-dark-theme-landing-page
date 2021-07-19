@@ -35,6 +35,10 @@ body {
   color: $white;
   font-family: 'Open Sans';
   font-size: rem(14);
+  
+  @include breakpoint-up('medium') {
+    font-size: rem(15);
+  }
 }
 
 // h1 - h6

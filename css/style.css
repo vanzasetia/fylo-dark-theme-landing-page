@@ -479,9 +479,7 @@ img {
 }
 
 .hidden {
-  opacity: 0;
-  pointer-events: none;
-  height: 0.0625rem;
+  display: none;
 }
 
 .container {
@@ -542,6 +540,11 @@ img {
   outline: 0.125rem dashed #65e2d9;
   outline-offset: 0.3125rem;
 }
+@media screen and (max-width: 22.4375em) {
+  .header__home {
+    flex-basis: 5rem;
+  }
+}
 
 .header__list {
   display: flex;
@@ -563,6 +566,11 @@ img {
 }
 .header__link:hover, .header__link:active, .header__link:focus {
   text-decoration: underline;
+}
+@media screen and (max-width: 22.4375em) {
+  .header__link {
+    font-size: 0.75rem;
+  }
 }
 
 .hero {
@@ -745,7 +753,7 @@ img {
 }
 
 .cta__email {
-  border: none;
+  border: 0.3125rem solid white;
   border-radius: 5em;
   padding: 0.875rem;
   padding-right: 1.875rem;
@@ -755,9 +763,6 @@ img {
 .cta__email:focus-visible {
   outline: 0.125rem dashed #65e2d9;
   outline-offset: 0.3125rem;
-}
-.cta__email:focus {
-  outline: none;
 }
 
 .cta__form .btn {
@@ -798,7 +803,15 @@ img {
   padding-bottom: 5.625rem;
   font-size: 1rem;
 }
+@media screen and (max-width: 22.4375em) {
+  .footer {
+    font-size: 0.875rem;
+  }
+}
 
+.footer__home {
+  display: inline-block;
+}
 .footer__home:focus-visible {
   outline: 0.125rem dashed #65e2d9;
   outline-offset: 0.3125rem;
@@ -884,22 +897,34 @@ img {
   height: 3.125rem;
   width: 3.125rem;
 }
-.social__item:focus-visible {
-  outline: 0.125rem dashed #65e2d9;
-  outline-offset: 0.3125rem;
-}
 .social__item:hover, .social__item:active, .social__item:focus {
   border-color: #65e2d9;
 }
 .social__item:hover .social__icon path, .social__item:active .social__icon path, .social__item:focus .social__icon path {
   fill: #65e2d9;
 }
+@media screen and (max-width: 22.4375em) {
+  .social__item {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+}
 
 .social__link {
   line-height: 0;
+}
+.social__link:focus-visible {
+  outline: 0.125rem dashed #65e2d9;
+  outline-offset: 0.3125rem;
 }
 
 .social__icon {
   height: 1.5625rem;
   width: 1.5625rem;
+}
+@media screen and (max-width: 22.4375em) {
+  .social__icon {
+    height: 1.125rem;
+    width: 1.125rem;
+  }
 }

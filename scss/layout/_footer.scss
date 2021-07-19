@@ -5,9 +5,14 @@
   padding-top: rem(240);
   padding-bottom: rem(90);
   font-size: rem(16);
+  
+  @include breakpoint-down('very-small') {
+    font-size: rem(14);
+  }
 }
 
 .footer__home {
+  display: inline-block;
   
   @include focus-visible;
 }
@@ -89,7 +94,6 @@
   height: rem(50);
   width: rem(50);
   
-  @include focus-visible;
   @include on-event {
     border-color: $cyan;
     
@@ -97,13 +101,25 @@
       fill: $cyan;
     }
   }
+  
+  @include breakpoint-down('very-small') {
+    height: rem(36);
+    width: rem(36);
+  }
 }
 
 .social__link {
   line-height: 0;
+  
+  @include focus-visible;
 }
 
 .social__icon {
   height: rem(25);
   width: rem(25);
+  
+  @include breakpoint-down('very-small') {
+    height: rem(18);
+    width: rem(18);
+  }
 }

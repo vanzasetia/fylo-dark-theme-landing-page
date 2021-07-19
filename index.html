@@ -28,11 +28,6 @@
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="msapplication-config" content="images/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
-  <!-- Android Dev Tools -->
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>
-    eruda.init();
-  </script>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
   <!-- Mailgo -->
@@ -230,7 +225,7 @@
             questions, our support team would be happy to help you.
           </p>
           <form class="cta__form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-            <p class="hidden" aria-hidden="true">
+            <p class="hidden">
               <label>Don’t fill this out if you’re human: </label>
               <input type="text" name="bot-field">
             </p>

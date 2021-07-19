@@ -15,6 +15,9 @@
   flex-basis: rem(100);
   
   @include focus-visible;
+  @include breakpoint-down('very-small') {
+    flex-basis: rem(80);
+  }
 }
 
 .header__list {
@@ -35,5 +38,9 @@
   @include focus-visible;
   @include on-event {
     text-decoration: underline;
+  }
+  
+  @include breakpoint-down('very-small') {
+    font-size: rem(12);
   }
 }

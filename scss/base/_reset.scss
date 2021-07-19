@@ -90,7 +90,5 @@ img {
 
 // Bot Input
 .hidden {
-  opacity: 0;
-  pointer-events: none;
-  height: rem(1);
+  display: none;
 }

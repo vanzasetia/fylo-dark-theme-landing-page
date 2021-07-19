@@ -17,7 +17,7 @@
 ## Feedback and Live Review
 * [🌍 Live Review](https://fylodarkthemevs.netlify.app/)
 * [👉 Give feedback on Frontend Mentor platform](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-html5-css3-sass-71fZb3LhF)
-* [🐦 Give Feedback on Twitter]()
+* [🐦 Give Feedback on Twitter](https://twitter.com/vanzasetia/status/1417004981945733120?s=19)
 
 ## The Story When Doing This Challenge
 

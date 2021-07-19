@@ -3,6 +3,10 @@
 .features {
   padding-top: rem(370);
   padding-bottom: rem(90);
+  
+  @include breakpoint-up('small') {
+    padding-top: rem(200);
+  }
 }
 
 .features__list {

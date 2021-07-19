@@ -3,4 +3,8 @@
 .container {
   margin: 0 auto;
   padding: 0 rem(20);
+  
+  @include breakpoint-up('small') {
+    padding: 0 rem(40);
+  }
 }

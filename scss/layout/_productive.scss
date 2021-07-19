@@ -37,3 +37,11 @@
     }
   }
 }
+
+.productive__image {
+  
+  @include breakpoint-up('small') {
+    margin: 0 auto;
+    max-width: rem(400);
+  }
+}

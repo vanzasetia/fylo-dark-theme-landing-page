@@ -8,6 +8,10 @@
   background-size: 100%;
   height: rem(330);
   overflow-y: visible;
+  
+  @include breakpoint-up('small') {
+    height: rem(500);
+  }
 }
 
 .hero__text {
@@ -17,4 +21,12 @@
 
 .hero__title {
   font-size: rem(24);
+}
+
+.hero__image {
+    
+  @include breakpoint-up('small') {
+    margin: 0 auto;
+    max-width: rem(400);
+  }
 }

@@ -486,6 +486,11 @@ img {
   margin: 0 auto;
   padding: 0 1.25rem;
 }
+@media screen and (min-width: 40em) {
+  .container {
+    padding: 0 2.5rem;
+  }
+}
 
 .flex {
   display: flex;
@@ -582,6 +587,11 @@ img {
   height: 20.625rem;
   overflow-y: visible;
 }
+@media screen and (min-width: 40em) {
+  .hero {
+    height: 31.25rem;
+  }
+}
 
 .hero__text {
   margin-top: 1.25rem;
@@ -592,9 +602,21 @@ img {
   font-size: 1.5rem;
 }
 
+@media screen and (min-width: 40em) {
+  .hero__image {
+    margin: 0 auto;
+    max-width: 25rem;
+  }
+}
+
 .features {
   padding-top: 23.125rem;
   padding-bottom: 5.625rem;
+}
+@media screen and (min-width: 40em) {
+  .features {
+    padding-top: 12.5rem;
+  }
 }
 
 .features__list {
@@ -661,6 +683,13 @@ img {
 }
 .productive__link:hover .productive__svg use, .productive__link:active .productive__svg use, .productive__link:focus .productive__svg use {
   fill: white;
+}
+
+@media screen and (min-width: 40em) {
+  .productive__image {
+    margin: 0 auto;
+    max-width: 25rem;
+  }
 }
 
 .testimonials {
@@ -753,7 +782,7 @@ img {
 }
 
 .cta__email {
-  border: 0.3125rem solid white;
+  border: none;
   border-radius: 5em;
   padding: 0.875rem;
   padding-right: 1.875rem;

@@ -15,8 +15,8 @@
 </p>
 
 ## Feedback and Live Review
-* [🌍 Live Review]()
-* [👉 Give feedback on Frontend Mentor platform]()
+* [🌍 Live Review](https://fylodarkthemevs.netlify.app/)
+* [👉 Give feedback on Frontend Mentor platform](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-html5-css3-sass-71fZb3LhF)
 * [🐦 Give Feedback on Twitter]()
 
 ## The Story When Doing This Challenge
@@ -25,7 +25,7 @@ I got a problem on `icon-security.svg`, this icon is weird. The size is not the 
 
 The `testimonials` section and `footer` on the `mobile-design` in my opinion the `font-size` is too small. So I make it bigger.
 
-About the **inline svg**, I have to use those as inline svg so that I can change the color when it is on `:hover`. But if you have a better way feel free to let me know in the [community feedback section]().
+About the **inline svg**, I have to use those as inline svg so that I can change the color when it is on `:hover`. But if you have a better way feel free to let me know in the [community feedback section](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-html5-css3-sass-71fZb3LhF).
 
 Something is also happening to `icon-location.svg`, where I have to give `margin-top` to make it align correctly with the paragraph.
 

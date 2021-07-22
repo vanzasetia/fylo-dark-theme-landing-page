@@ -342,7 +342,7 @@ template {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-dislay: fallback;
+  font-display: fallback;
   src: local(sans-serif),
     url('../fonts/OpenSans-Regular.woff') format('woff'),
     url('../fonts/OpenSans-Regular.ttf') format('truetype');
@@ -351,7 +351,7 @@ template {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  font-dislay: fallback;
+  font-display: fallback;
   src: local(sans-serif),
     url('../fonts/OpenSans-Bold.woff') format('woff'),
     url('../fonts/OpenSans-Bold.ttf') format('truetype');
@@ -360,7 +360,7 @@ template {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  font-dislay: fallback;
+  font-display: fallback;
   src: local(sans-serif),
     url('../fonts/Raleway-Regular.woff') format('woff'),
     url('../fonts/Raleway-Regular.ttf') format('truetype');
@@ -369,7 +369,7 @@ template {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-dislay: fallback;
+  font-display: fallback;
   src: local(sans-serif),
     url('../fonts/Raleway-Bold.woff') format('woff'),
     url('../fonts/Raleway-Bold.ttf') format('truetype');

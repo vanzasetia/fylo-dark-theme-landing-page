@@ -342,7 +342,7 @@ template {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-display: fallback;
+  font-display: swap;
   src: local(sans-serif),
     url('../fonts/OpenSans-Regular.woff') format('woff'),
     url('../fonts/OpenSans-Regular.ttf') format('truetype');
@@ -351,7 +351,7 @@ template {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
+  font-display: swap;
   src: local(sans-serif),
     url('../fonts/OpenSans-Bold.woff') format('woff'),
     url('../fonts/OpenSans-Bold.ttf') format('truetype');
@@ -360,7 +360,7 @@ template {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  font-display: fallback;
+  font-display: swap;
   src: local(sans-serif),
     url('../fonts/Raleway-Regular.woff') format('woff'),
     url('../fonts/Raleway-Regular.ttf') format('truetype');
@@ -369,7 +369,7 @@ template {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-display: fallback;
+  font-display: swap;
   src: local(sans-serif),
     url('../fonts/Raleway-Bold.woff') format('woff'),
     url('../fonts/Raleway-Bold.ttf') format('truetype');
@@ -416,7 +416,7 @@ html {
 body {
   background-color: #181f2a;
   color: white;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.875rem;
 }
 @media screen and (min-width: 48em) {

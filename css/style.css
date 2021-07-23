@@ -337,7 +337,7 @@ template {
 [hidden] {
   display: none;
 }
-
+/*
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -374,6 +374,7 @@ template {
     url('../fonts/Raleway-Bold.woff') format('woff'),
     url('../fonts/Raleway-Bold.ttf') format('truetype');
 }
+*/
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {

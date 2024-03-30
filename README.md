@@ -1,23 +1,15 @@
 # Fylo Dark Theme Landing Page
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Difficulty-Junior-brightgreen?style=for-the-badge" alt="Difficulty">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/fylo-dark-theme-landing-page?style=for-the-badge">
-  <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
-  <img alt="Netlify" src="https://img.shields.io/netlify/66d088be-8d5b-415d-9b2e-58d778b0c09f?style=for-the-badge">
-</p>
-<p>
-  <a href="http://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
-    </a>
-</p>
+## Disclaimer
+
+This project is solely for learning purposes. I take no any responsibility or liability for the accuracy, completeness, or usefulness of any information provided in this project. You should not use it as a reference for creating your project.
+
+I am currently no longer working on this project.
 
 ## Feedback and Live Review
-* [🌍 Live Review](https://fylodarkthemevs.netlify.app/)
-* [👉 Give feedback on Frontend Mentor platform](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-html5-css3-sass-71fZb3LhF)
-* [🐦 Give Feedback on Twitter](https://twitter.com/vanzasetia/status/1417004981945733120?s=19)
+
+- [Live Review](https://fylodarkthemevs.netlify.app/)
+- [Give feedback on Frontend Mentor platform](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-html5-css3-sass-71fZb3LhF)
 
 ## The Story When Doing This Challenge
 
@@ -35,27 +27,18 @@ Something is also happening to `icon-location.svg`, where I have to give `margin
 }
 ```
 
-
 ## What I Learned
+
 * **Email validation**, I learned on how to add email input validation without using JavaScript.
 
-
 ## Built With
+
 This project is created using **HTML5**, **CSS3**, and **Sass**. 
 
 I used one of the form features from [Netlify which Forms Spam Filters](https://docs.netlify.com/forms/spam-filters/), using **Honeypot field**.
 
-I also used [Mailgo](https://mailgo.dev/), which is a light JavaScript library for `mailto` and `tel`. It will give you a nice popup for every `mailto` and `tel` link. I really ❤️ love this library, since it is **easy** and **simple** to use.
-<p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" width="auto" height="70px">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" width="auto" height="70px">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="" width="auto" height="70px">
-  <img src="./images/mailgo.png" alt="" width="auto" height="70px">
-</p>
+I also used [Mailgo](https://mailgo.dev/), which is a light JavaScript library for `mailto` and `tel`. It will give you a nice popup for every `mailto` and `tel` link.
 
 ## Useful Resources
-* [Form Validation UX in HTML and CSS](https://css-tricks.com/form-validation-ux-html-css/)
 
-## Continued development
-
-I'm gonna take a look at feedback from other people to improve this site.
+[Form Validation UX in HTML and CSS](https://css-tricks.com/form-validation-ux-html-css/)
